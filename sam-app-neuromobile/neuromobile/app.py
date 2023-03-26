@@ -3,7 +3,14 @@ import requests
 
 
 def get_users(event, context):
+
     ## Realizamos la llamada a la API de neuromobile
+
+
+
+
+
+
     return {
         "statusCode": 200,
         "body": json.dumps({

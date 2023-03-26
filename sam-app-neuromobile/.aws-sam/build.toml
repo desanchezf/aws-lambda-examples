@@ -8,6 +8,6 @@ architecture = "x86_64"
 handler = "app.get_user"
 manifest_hash = ""
 packagetype = "Zip"
-functions = ["GetUserFunction", "GetEventsFunction"]
+functions = ["GetUsersFunction", "GetEventsFunction"]
 
 [layer_build_definitions]

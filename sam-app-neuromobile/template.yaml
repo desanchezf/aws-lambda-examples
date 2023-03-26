@@ -11,7 +11,7 @@ Globals:
     Timeout: 3
 
 Resources:
-  GetUserFunction:
+  GetUsersFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: neuromobile/
@@ -23,7 +23,7 @@ Resources:
         GetUsers:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
-            Path: /get_users
+            Path: /get-users
             Method: get
 
   GetEventsFunction:
@@ -38,5 +38,5 @@ Resources:
         GetUsers:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
-            Path: /get_events
+            Path: /get-events
             Method: get
